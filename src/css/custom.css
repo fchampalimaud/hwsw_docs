@@ -1,0 +1,47 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* Champalimaud Foundation brand colours, taken from the logo (`static/img/logo.svg`).
+   `--cf-blue` is the logo blue itself; the darker steps are used where white text has
+   to stay readable on top of the colour, such as the homepage hero banner. */
+:root {
+  --cf-blue: #00adef;
+  --cf-blue-mid: #0090c9;
+  --cf-blue-dark: #0077a5;
+}
+
+/* Infima primary palette, derived from the Champalimaud Foundation blue above.
+   Light mode uses `--cf-blue-dark`, which keeps link text at 5:1 contrast on white;
+   the pure logo blue would only reach 2.6:1 and is used in dark mode instead. */
+:root {
+  --ifm-color-primary: var(--cf-blue-dark);
+  --ifm-color-primary-dark: #006b95;
+  --ifm-color-primary-darker: #00658c;
+  --ifm-color-primary-darkest: #005374;
+  --ifm-color-primary-light: #0083b6;
+  --ifm-color-primary-lighter: #0089be;
+  --ifm-color-primary-lightest: #009bd7;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: var(--cf-blue);
+  --ifm-color-primary-dark: #009cd7;
+  --ifm-color-primary-darker: #0093cb;
+  --ifm-color-primary-darkest: #0079a7;
+  --ifm-color-primary-light: #14b4f0;
+  --ifm-color-primary-lighter: #1fb7f1;
+  --ifm-color-primary-lightest: #38bff3;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+table {
+  display: table;
+  width: initial;
+  margin: 0 auto;
+}

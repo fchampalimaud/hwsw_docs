@@ -1,0 +1,111 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.heroBanner {
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  /* Champalimaud Foundation blue (see `--cf-blue` in src/css/custom.css) instead of the
+     Infima primary colour. The gradient darkens the logo blue enough for the white
+     heading and subtitle to stay legible on top of it. */
+  background: linear-gradient(160deg, var(--cf-blue-mid) 0%, var(--cf-blue-dark) 100%);
+  --ifm-hero-text-color: #ffffff;
+}
+
+/* Keeps the title and subtitle above the animated canvas backdrop. */
+.heroContent {
+  position: relative;
+  z-index: 1;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}
+
+.main {
+  padding: 3rem 0 4rem;
+}
+
+.sectionTitle {
+  margin-bottom: 0.25rem;
+}
+
+.sectionSubtitle {
+  color: var(--ifm-color-emphasis-700);
+  margin-bottom: 2rem;
+}
+
+.deviceRow {
+  row-gap: 1.5rem;
+}
+
+.deviceCol {
+  display: flex;
+}
+
+.deviceCard {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem 0.5rem 0.25rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  color: var(--ifm-font-color-base);
+  transition: border-color var(--ifm-transition-fast),
+    box-shadow var(--ifm-transition-fast), transform var(--ifm-transition-fast);
+}
+
+.deviceCard:hover {
+  text-decoration: none;
+  color: var(--ifm-font-color-base);
+  border-color: var(--ifm-color-primary);
+  box-shadow: var(--ifm-global-shadow-md);
+  transform: translateY(-2px);
+}
+
+.deviceCardMuted {
+  border-style: dashed;
+}
+
+.deviceImageWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Fixed box so every card lines up. Wider than tall to suit the front panel drawings,
+     but not as wide as they are (2.9:1), so squarer device photos still render large. */
+  aspect-ratio: 2 / 1;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.25rem;
+  /* No background: the drawings are transparent and sit directly on the card. */
+  overflow: hidden;
+}
+
+.deviceImage {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.deviceTitle {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.deviceBadge {
+  vertical-align: middle;
+}
+
+.deviceDescription {
+  margin-bottom: 0;
+  color: var(--ifm-color-emphasis-800);
+}
+
+.deviceLink {
+  font-weight: var(--ifm-font-weight-semibold);
+  color: var(--ifm-color-primary);
+}

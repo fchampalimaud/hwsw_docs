@@ -25,12 +25,9 @@ between arenas and connectors, as it is needed to identify the animals during th
 1. If using a Harp clock synchronizer board, connect the correspondent audio cable to the
    **clock sync (CLK SYNC)** input.
 
-### Step 3: Power Connection
-1. Connect the power adapter to the barrel connector at the back panel.
-2. The green LED in the front panel must start blinking.
-
-### Step 4: USB connection
+### Step 3: USB connection
 1. Connect the **USB cable** to the back panel USB port and to your computer.
+2. The green LED in the front panel must start blinking.
 
 ---
 

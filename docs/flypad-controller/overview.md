@@ -33,7 +33,7 @@ The flyPAD system is organized in two layers: the **behavioral arenas**, which p
 capacitance measurement, and the **Harp FlyPAD Controller**, which multiplexes and streams the
 readings.
 
-The supported arenas are composed by a single borad with four independent arenas each one with **two independent food
+The supported arenas are composed by a single board with four independent arenas each one with **two independent food
 channels**. Each channel is a pair of concentric electrodes:
 
 - an outer annular *fly* electrode (10 mm outer diameter, 3 mm inner diameter), on which the
@@ -88,7 +88,7 @@ can be aligned offline with the data of any other Harp device sharing the same c
 ## Connectivity
 
 - **State LED [STATE]**: Green LED Harp status indicator
-- **Digital IN/OUT [IN/OUT]** 1x Screw terminal for 2x outputs and 2x inputsV (digital 5V tolerant) 
+- **Digital IN/OUT [IN/OUT]** 1x Screw terminal for 2x outputs and 2x inputs (digital 5V tolerant) 
 - **Clock Sync Input [CLKIN]:** 1x Stereo jack clock input
 - **Computer Interface [USB]:** 1x USB Type-C
 - **Arenas Connectors**: 8x IDC connectors for each one of the quad arenas

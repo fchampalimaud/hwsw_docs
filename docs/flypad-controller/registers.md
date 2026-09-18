@@ -10,7 +10,6 @@ sidebar_position: 2
 The [Harp protocol](https://harp-tech.org/protocol/BinaryProtocol-8bit.html) relies on registers with specific functionalities and data types, and are essentially used to exchange information with the device.
 
 The Harp FlyPAD Controller registers are declared in the device's `device.yml` file. 
-These registers names are the one that are uses by the software and will be described here for an easy digestion.
 
 These register names are used by the software and will be described here according with their functionality, for quick reference and easier understanding.
 

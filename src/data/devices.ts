@@ -73,14 +73,15 @@ export const devices: Device[] = [
     id: 'current-driver',
     title: 'Harp Current Driver',
     description:
-      'Current driver device for stimulation and actuation applications. ' +
-      'Documentation is currently being prepared.',
+      'Two channel precision current source for optogenetic stimulation, ' +
+      'driving LEDs up to 500 mA with device generated pulses and ramps.',
     docId: 'current-driver/overview',
     image: {
       light: '/img/devices/current_driver.png',
       dark: '/img/devices/current_driver_dark.png',
     },
-    status: 'in-progress',
+    status: 'available',
+    repo: 'https://github.com/fchampalimaud/device.currentdriver',
   },
 ];
 

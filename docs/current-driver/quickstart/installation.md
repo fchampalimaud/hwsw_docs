@@ -11,10 +11,10 @@ description: Initial hardware and software setup description
 ## Hardware
 
 ### Step 1: LED Connection
-1. Connect the **anode** of the LED to the positive rail of the power supply and the **cathode** to
-   the **LED0** (or **LED1**) screw terminal.
+1. Connect the **anode** of the LED to the positive pin of the **LED0** (or **LED1**) screw terminal and the **cathode** to
+   the negative **LED0** (or **LED1**) screw terminal.
 2. If an external LED driver is used instead, connect its analog input to the **DAC0** (or **DAC1**)
-   screw terminal and its ground to the device ground.
+   screw terminal.
 
 :::warning[LED ratings]
 Check the maximum current of the LED in its datasheet before enabling the output, and configure the
